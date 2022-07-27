@@ -1,0 +1,28 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: $color-dark;
+  }
+
+  & > span {
+    color: $color-blue;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 28px;
+    margin-right: 93px;
+  }
+}

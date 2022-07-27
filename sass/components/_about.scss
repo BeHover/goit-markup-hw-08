@@ -1,0 +1,39 @@
+.about {
+  display: none;
+
+  &.section {
+    padding-top: 0;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    padding: 27px 15px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: $color-white;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+  }
+}
