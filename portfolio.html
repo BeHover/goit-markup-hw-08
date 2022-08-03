@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/styles.css" rel="stylesheet" />
 
     <title>HTML+CSS Bootcamp</title>
 
@@ -13,12 +12,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
 
-    <link href="/css/main.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
   </head>
+  
   <body>
     <header class="header">
-      <div class="container navbar">
-        <a href="/" class="logo"><span>Web</span>Studio</a>
+      <div class="container navbar contacts social-media">
+        <a href="index.html" class="logo"><span>Web</span>Studio</a>
 
         <button type="button" class="navbar__button flex" data-menu-button>
           <svg width="24" height="16">
@@ -31,10 +31,10 @@
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a href="/" class="nav__link">Студія</a>
+                <a href="index.html" class="nav__link">Студія</a>
               </li>
               <li class="nav__item">
-                <a href="/portfolio.html" class="nav__link nav__link--active">Портфоліо</a>
+                <a href="portfolio.html" class="nav__link nav__link--active">Портфоліо</a>
               </li>
               <li class="nav__item">
                 <a href="#" class="nav__link">Контакти</a>
@@ -42,27 +42,39 @@
             </ul>
           </nav>
   
-          <div class="contacts">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg width="16" height="12" class="contacts__icon">
-                <use href="/images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg width="10" height="16" class="contacts__icon">
-                <use href="/images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </div>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--mail">
+                <svg width="16" height="12" class="contacts__icon">
+                  <use href="images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link contacts__link--phone">
+                <svg width="10" height="16" class="contacts__icon">
+                  <use href="images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
 
-          <div class="social-media">
-            <a href="#" class="social-media__link">Instagram</a>
-            <a href="#" class="social-media__link">Twitter</a>
-            <a href="#" class="social-media__link">Facebook</a>
-            <a href="#" class="social-media__link">LinkedIn</a>
-          </div>
+          <ul class="social-media__list">
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">Instagram</a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">Twitter</a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">Facebook</a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -70,7 +82,7 @@
     <main>
       <section class="portfolio controls project section">
         <div class="container">
-          <h2 class="section__title" style="display: none;">Наші роботи</h2>
+          <h2 class="section__title" style="display: none">Наші роботи</h2>
           
           <ul class="controls__list">
             <li class="controls__item">
@@ -108,7 +120,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Технокряк</p>
+                  <h3 class="project__name">Технокряк</h3>
                   <p class="project__type">Веб-сайт</p>
                 </div>
               </a>
@@ -130,7 +142,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Постер New Orlean vs Golden Star</p>
+                  <h3 class="project__name">Постер New Orlean vs Golden Star</h3>
                   <p class="project__type">Дизайн</p>
                 </div>
               </a>
@@ -152,7 +164,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Ресторан Seafood</p>
+                  <h3 class="project__name">Ресторан Seafood</h3>
                   <p class="project__type">Додаток</p>
                 </div>
               </a>
@@ -174,7 +186,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Проєкт Prime</p>
+                  <h3 class="project__name">Проєкт Prime</h3>
                   <p class="project__type">Маркетинг</p>
                 </div>
               </a>
@@ -196,7 +208,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Проєкт Boxes</p>
+                  <h3 class="project__name">Проєкт Boxes</h3>
                   <p class="project__type">Додаток</p>
                 </div>
               </a>
@@ -218,7 +230,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Inspiration has no Borders</p>
+                  <h3 class="project__name">Inspiration has no Borders</h3>
                   <p class="project__type">Веб-сайт</p>
                 </div>
               </a>
@@ -240,7 +252,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Видання Limited Edition</p>
+                  <h3 class="project__name">Видання Limited Edition</h3>
                   <p class="project__type">Дизайн</p>
                 </div>
               </a>
@@ -262,7 +274,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Проект LAB</p>
+                  <h3 class="project__name">Проект LAB</h3>
                   <p class="project__type">Маркетинг</p>
                 </div>
               </a>
@@ -284,7 +296,7 @@
                   </div>
                 </div>
                 <div class="project__info">
-                  <p class="project__name">Growing Business</p>
+                  <h3 class="project__name">Growing Business</h3>
                   <p class="project__type">Додаток</p>
                 </div>
               </a>
@@ -297,15 +309,11 @@
     <footer class="footer">
       <div class="container footer__content">
         <div class="footer__block footer__block--contacts">
-          <a href="/" class="logo"><span>Web</span>Studio</a>
+          <a href="index.html" class="logo"><span>Web</span>Studio</a>
           <address>
             <p class="footer__text">м. Київ, пр-т Лесі Українки, 26</p>
-            <a href="mailto:info@devstudio.com" class="footer__link">
-              info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="footer__link">
-              +38 096 111 11 11
-            </a>
+            <a href="mailto:info@devstudio.com" class="footer__link">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="footer__link">+38 096 111 11 11</a>
           </address>
         </div>
 
@@ -315,28 +323,28 @@
             <li class="social__item">
               <a href="#" class="social__link flex">
                 <svg width="20" height="20" class="social__icon">
-                  <use href="/images/icons.svg#icon-instagram"></use>
+                  <use href="images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link flex">
                 <svg width="20" height="20" class="social__icon">
-                  <use href="/images/icons.svg#icon-twitter"></use>
+                  <use href="images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link flex">
                 <svg width="20" height="20" class="social__icon">
-                  <use href="/images/icons.svg#icon-facebook"></use>
+                  <use href="images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a href="#" class="social__link flex">
                 <svg width="20" height="20" class="social__icon">
-                  <use href="/images/icons.svg#icon-linkedin"></use>
+                  <use href="images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -346,11 +354,17 @@
         <div class="footer__block footer__block--form">
           <p>Підпишіться на розсилку</p>
           <form class="form">
-            <input type="email" name="email" class="form__field form__field--input" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              class="form__field form__field--input"
+              placeholder="E-mail"
+              required
+            />
             <button type="submit" class="btn btn--primary">
               Підписатися
               <svg width="24" height="24">
-                <use href="/images/icons.svg#icon-send"></use>
+                <use href="images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </form>
@@ -358,6 +372,6 @@
       </div>
     </footer>
 
-    <script src="/js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
