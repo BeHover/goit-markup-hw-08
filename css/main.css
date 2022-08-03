@@ -654,7 +654,7 @@ a:hover, a:focus {
 }
 .main {
   background-color: #2f303a;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/main-background@1x.jpg");
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -676,7 +676,7 @@ a:hover, a:focus {
 
 @media screen and (min-width: 768px) {
   .main {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/main-background@2x.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background@2x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -687,7 +687,7 @@ a:hover, a:focus {
 }
 @media screen and (min-width: 1200px) {
   .main {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/main-background@3x.jpg");
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/main-background@3x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
